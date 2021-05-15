@@ -6,6 +6,18 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <section>
+            <h1>Page Scroll Effects</h1>
+            <span class="curve">
+                <img src="img/curve.png">
+            </span>
+        </section>
+    <script type="text/javascript">
+        var scroll = document.querySelector('.curve');
+        window.addEventListener('scroll', function(){
+            var value = 1 + window.scrollY/ -500;
+            scroll.style.transform = `scaleY(${value})`;
+        })
+    </script>
     </body>
 </html>
